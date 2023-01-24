@@ -125,32 +125,3 @@ loadTasks();
 
 //Guardamos las tareas en el localStorage
 window.addEventListener("beforeunload", saveTasks);
-
-//Drag and drop
-/*const tasks = Array.from(list.children);
-
-function handleDrag(event){
-	event.dataTransfer.setData("text", event.target.id);
-}
-
-function handleDrop(event){
-	event.preventDefault();
-	const data = event.dataTransfer.getData("text");
-	const dragElement = document.getElementById(data);
-	const target = event.target;
-	if(target.tagName === "li"){
-		list.insertBefore(dragElement,target);
-	}
-}
-
-function handleDragOver(evet){
-	event.preventDefault();
-}
-
-tasks.forEach(task => {
-	task.setAttribute("draggable", true);
-
-	task.addEventListener("dragstart", handleDrag);
-	task.addEventListener("dragover", handleDragOver);
-	task.addEventListener("drop", handleDrop);
-});*/
