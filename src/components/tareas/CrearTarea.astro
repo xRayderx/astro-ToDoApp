@@ -1,0 +1,24 @@
+---
+
+---		
+
+		<div class="mb-4 flex items-center" id="todo-controls">
+			<label for="filter-select" class="text-white mr-4 uppercase font-medium">Filtrar-tareas</label>
+			<select id="filter-select" class="bg-[#1F2833] p-2 rounded-lg outline-1 outline-dashed outline-[#66FCF1]/50">
+				<option value="all">Todos</option>
+				<option value="completed">Completadas</option>
+				<option value="incomplete">Incompletas</option>
+			</select>
+			<button id="clear-completed" class="ml-auto uppercase text-[#66FCF1] font-semibold">Limpiar</button>
+		</div>
+
+		<form class="flex items-center bg-[#1F2833] rounded-md gap-4 p-[18px]" id="todo-form">
+			<!--<span class="rounded-full border-2 border-[#66FCF1] w-6 h-6 inline-block"></span>-->
+			<input type="text" class="w-full bg-transparent outline-none" placeholder="Crear nueva tarea..." id="todo-input" required/>
+			<button type="submit" class="border-2 border-[#66FCF1] bg-green-500 text-white p-2 ml-auto rounded-md hover:bg-green-600">+</button> 
+		</form>
+
+		<ul id="todo-list"></ul>
+
+
+<script src="../script/todo"></script>
